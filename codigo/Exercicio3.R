@@ -23,7 +23,7 @@ modaExercicio3 <- getmode(vetor)
 #Grafico:
 if(!"ggplot2" %in% installed.packages()) install.packages("ggplot2")
 library(ggplot2)
-ggplot(tabela3,aes(x= tabela3$`Numero de Filhos`,y=tabela3$Familias),) + geom_bar(stat= "identity",width= 0.2)
-barplot(tabela3,ylim = c(0,40))
+ggplot(tabela3,aes(x= `Numero de Filhos`,y=Familias),) + geom_bar(stat= "identity",width= 0.2)
+barplot(!is.na(tabela3),ylim = c(0,40))
 
         
